@@ -1,0 +1,41 @@
+module clk_divider(clk,clk1);
+input clk;
+output reg clk1=0;
+reg [25:0] count;
+always@(posedge clk)
+begin
+
+if (count==49999999)
+begin
+count<=0;
+clk1<=~clk1;
+end
+else
+count<=count+1;
+end
+endmodule
+`timescale 1 ns/1 ps
+module test_divider;
+reg t_clk;
+wire t_clk1=0;
+clk_divider dut(.clk(t_clk),.clk1(t_clk1));
+initial 
+begin
+t_clk=0;
+
+end
+always
+begin
+#10 t_clk<=~t_clk;
+
+end
+
+initial
+
+#500000000 $finish;
+ initial begin
+    //dump waveform
+    $dumpfile("dump.vcd"); $dumpvars;
+  end
+
+endmodule

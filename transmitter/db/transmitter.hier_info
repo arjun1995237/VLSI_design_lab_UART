@@ -1,0 +1,34 @@
+|transmitter
+data[0] => Mux0.IN19
+data[1] => Mux0.IN18
+data[2] => Mux0.IN17
+data[3] => Mux0.IN16
+data[4] => Mux0.IN15
+data[5] => Mux0.IN14
+data[6] => Mux0.IN13
+data[7] => Mux0.IN12
+start => next_state.start_bit.DATAB
+start => Selector3.IN1
+clk1 => clk1.IN1
+done << done$latch.DB_MAX_OUTPUT_PORT_TYPE
+reset => present_state.OUTPUTSELECT
+reset => present_state.OUTPUTSELECT
+reset => present_state.OUTPUTSELECT
+TX << Selector2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmitter|counter_tx:DUT1
+clk1 => count[0]~reg0.CLK
+clk1 => count[1]~reg0.CLK
+clk1 => count[2]~reg0.CLK
+clk1 => count[3]~reg0.CLK
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+
+

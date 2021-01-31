@@ -1,0 +1,6 @@
+
+State Machine - |transmitter|present_state
+Name present_state.idle present_state.shift present_state.start_bit 
+present_state.idle 0 0 0 
+present_state.start_bit 1 0 1 
+present_state.shift 1 1 0 

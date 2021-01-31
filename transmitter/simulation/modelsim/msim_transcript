@@ -1,0 +1,68 @@
+# ERROR: No extended dataflow license exists
+# do transmitter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/arjun/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/arjun/Desktop/HDL/transmitter {/home/arjun/Desktop/HDL/transmitter/transmitter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:22:28 on Jan 31,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/arjun/Desktop/HDL/transmitter" /home/arjun/Desktop/HDL/transmitter/transmitter.v 
+# -- Compiling module counter_tx
+# -- Compiling module transmitter
+# 
+# Top level modules:
+# 	transmitter
+# End time: 10:22:28 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vcom
+vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/transmitter/testbench.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:22:45 on Jan 31,2021
+# vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/transmitter/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 10:22:45 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/transmitter/transmitter.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:22:46 on Jan 31,2021
+# vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/transmitter/transmitter.v 
+# -- Compiling module counter_tx
+# -- Compiling module transmitter
+# 
+# Top level modules:
+# 	transmitter
+# End time: 10:22:46 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 10:22:50 on Jan 31,2021
+# Loading work.testbench
+# Loading work.transmitter
+# Loading work.counter_tx
+add wave -position insertpoint  \
+sim:/testbench/clk1 \
+sim:/testbench/data \
+sim:/testbench/done \
+sim:/testbench/reset \
+sim:/testbench/start \
+sim:/testbench/TX
+run
+# ** Note: $finish    : /home/arjun/Desktop/HDL/transmitter/testbench.v(21)
+#    Time: 600 ns  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at /home/arjun/Desktop/HDL/transmitter/testbench.v line 21
+# End time: 11:31:26 on Jan 31,2021, Elapsed time: 1:08:36
+# Errors: 0, Warnings: 0

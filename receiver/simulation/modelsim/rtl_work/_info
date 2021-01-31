@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/arjun/Desktop/HDL/receiver/simulation/modelsim
+vcounter_rx
+Z1 !s110 1612090730
+!i10b 1
+!s100 2;g;<KHQ7o4[jK:3:`e=H2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>PoGWP`cmBReh>@OKldB11
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1612090676
+Z5 8/home/arjun/Desktop/HDL/receiver/receiver.v
+Z6 F/home/arjun/Desktop/HDL/receiver/receiver.v
+!i122 3
+L0 4 19
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1612090730.000000
+Z9 !s107 /home/arjun/Desktop/HDL/receiver/receiver.v|
+Z10 !s90 -reportprogress|300|-work|work|/home/arjun/Desktop/HDL/receiver/receiver.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vreceiver
+R1
+!i10b 1
+!s100 SJnI:h9ba=m0ZTUM6KfAP2
+R2
+IV3L<>7D3lni]_Eo1L0:@50
+R3
+R0
+R4
+R5
+R6
+!i122 3
+L0 24 68
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vtestbench
+!s110 1612090731
+!i10b 1
+!s100 mPiQ>fZ[j;M]ZG`Wcan@k1
+R2
+I82JK62gbKDb2jf6OSj`AF0
+R3
+R0
+w1612090672
+8/home/arjun/Desktop/HDL/receiver/testbench.v
+F/home/arjun/Desktop/HDL/receiver/testbench.v
+!i122 4
+L0 2 86
+R7
+r1
+!s85 0
+31
+!s108 1612090731.000000
+!s107 /home/arjun/Desktop/HDL/receiver/testbench.v|
+!s90 -reportprogress|300|-work|work|/home/arjun/Desktop/HDL/receiver/testbench.v|
+!i113 1
+R11
+R12

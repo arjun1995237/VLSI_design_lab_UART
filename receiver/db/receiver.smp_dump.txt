@@ -1,0 +1,7 @@
+
+State Machine - |receiver|present_state
+Name present_state.check present_state.sample present_state.glitch present_state.idle 
+present_state.idle 0 0 0 0 
+present_state.glitch 0 0 1 1 
+present_state.sample 0 1 0 1 
+present_state.check 1 0 0 1 

@@ -1,0 +1,69 @@
+# ERROR: No extended dataflow license exists
+# do clk_divider_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/arjun/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/arjun/Desktop/HDL/clk_divider {/home/arjun/Desktop/HDL/clk_divider/clk_divider.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:14:05 on Jan 31,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/arjun/Desktop/HDL/clk_divider" /home/arjun/Desktop/HDL/clk_divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 08:14:05 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vcom
+vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/clk_divider/clk_divider.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:14:32 on Jan 31,2021
+# vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/clk_divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 08:14:32 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/clk_divider/test_bench.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:14:32 on Jan 31,2021
+# vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/clk_divider/test_bench.v 
+# -- Compiling module test_divider
+# 
+# Top level modules:
+# 	test_divider
+# End time: 08:14:32 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.test_divider
+# vsim work.test_divider 
+# Start time: 08:14:35 on Jan 31,2021
+# Loading work.test_divider
+# Loading work.clk_divider
+add wave -position insertpoint  \
+sim:/test_divider/reset \
+sim:/test_divider/t_clk \
+sim:/test_divider/t_clk1
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arjun  Hostname: arjun-HP-15-Notebook-PC  ProcessID: 32667
+#           Attempting to use alternate WLF file "./wlftuyF9hJ".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftuyF9hJ
+run
+# ** Fatal: Unable to read lock file necessary for use of uncounted nodelocked license. Exiting.
+# End time: 08:19:35 on Jan 31,2021, Elapsed time: 0:05:00
+# Errors: 0, Warnings: 2

@@ -1,0 +1,108 @@
+# ERROR: No extended dataflow license exists
+# do receiver_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/arjun/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/arjun/Desktop/HDL/receiver {/home/arjun/Desktop/HDL/receiver/receiver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:25:18 on Jan 31,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/arjun/Desktop/HDL/receiver" /home/arjun/Desktop/HDL/receiver/receiver.v 
+# -- Compiling module counter_rx
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 16:25:18 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vcom
+
+vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/receiver/receiver.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:25:31 on Jan 31,2021
+# vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/receiver/receiver.v 
+# -- Compiling module counter_rx
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 16:25:31 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/receiver/testbench.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:25:32 on Jan 31,2021
+# vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/receiver/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 16:25:32 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 16:25:36 on Jan 31,2021
+# Loading work.testbench
+# Loading work.receiver
+# Loading work.counter_rx
+add wave -position insertpoint  \
+sim:/testbench/clk1 \
+sim:/testbench/d_out \
+sim:/testbench/reset \
+sim:/testbench/rx \
+sim:/testbench/valid_frame
+run
+# ** Note: $finish    : /home/arjun/Desktop/HDL/receiver/testbench.v(51)
+#    Time: 3920 ns  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at /home/arjun/Desktop/HDL/receiver/testbench.v line 51
+quit -sim
+# End time: 16:28:30 on Jan 31,2021, Elapsed time: 0:02:54
+# Errors: 0, Warnings: 0
+vcom
+vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/receiver/receiver.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:28:50 on Jan 31,2021
+# vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/receiver/receiver.v 
+# -- Compiling module counter_rx
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 16:28:50 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/receiver/testbench.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:28:51 on Jan 31,2021
+# vlog -reportprogress 300 -work work /home/arjun/Desktop/HDL/receiver/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 16:28:51 on Jan 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 16:28:54 on Jan 31,2021
+# Loading work.testbench
+# Loading work.receiver
+# Loading work.counter_rx
+add wave -position insertpoint  \
+sim:/testbench/clk1 \
+sim:/testbench/d_out \
+sim:/testbench/reset \
+sim:/testbench/rx \
+sim:/testbench/valid_frame
+run
+# ** Note: $finish    : /home/arjun/Desktop/HDL/receiver/testbench.v(83)
+#    Time: 7840 ns  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at /home/arjun/Desktop/HDL/receiver/testbench.v line 83

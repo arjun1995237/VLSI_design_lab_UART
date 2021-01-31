@@ -1,0 +1,44 @@
+module counter_rx(clr_count,clk1,count,bit_count);
+input clr_count,clk1;
+output reg [3:0]count,bit_count;
+always@(clk1)
+begin
+if (clr_count)
+	begin
+	count<=4'b0000;
+	bit_count<=4'b0000;
+	end
+else if(count==4'b0111)
+	bit_count<=bit_count+4'b0001;
+	count<=count+4'b0001;
+else
+	count<=count+4'b0001;
+end
+endmodule
+
+module receiver (clk1,RX,reset,valid_frame,dout);
+input clk1,RX,reset;
+output reg valid_frame;
+output reg [7:0] dout;
+reg [1:0] present_state,next_state;
+parameter idle=2'b00,glitch=2'b01,sample=2'b10,check=2'b11;
+wire [3:0]count,bit_count;
+reg clr_count;
+
+counter_rx DUT2(clr_count,clk1,count,bit_count)
+always@(present_state)
+begin
+case(present_state)
+idle:
+		begin
+		next_state=(RX)?idle:glitch;
+		clr_count=1;
+		end
+glitch:
+		begin
+		next_state=(RX)?idle:glitch;
+		clr_count=1;
+		end
+endcase
+
+endmodule

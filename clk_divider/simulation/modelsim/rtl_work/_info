@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/arjun/Desktop/HDL/clk_divider/simulation/modelsim
+vclk_divider
+Z1 !s110 1612061072
+!i10b 1
+!s100 L9ecPO:A;J5OE]k0=TNXi3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IR@b;8KfbFiEgA8UG:I_Z51
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1612060950
+8/home/arjun/Desktop/HDL/clk_divider/clk_divider.v
+F/home/arjun/Desktop/HDL/clk_divider/clk_divider.v
+!i122 1
+L0 3 23
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1612061072.000000
+!s107 /home/arjun/Desktop/HDL/clk_divider/clk_divider.v|
+!s90 -reportprogress|300|-work|work|/home/arjun/Desktop/HDL/clk_divider/clk_divider.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vtest_divider
+R1
+!i10b 1
+!s100 [;c;l2TTMnTI83OR^nU_>2
+R2
+I`z=Vm_89<9YAIlm8AYjBC3
+R3
+R0
+w1612058970
+8/home/arjun/Desktop/HDL/clk_divider/test_bench.v
+F/home/arjun/Desktop/HDL/clk_divider/test_bench.v
+!i122 2
+L0 3 27
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/arjun/Desktop/HDL/clk_divider/test_bench.v|
+!s90 -reportprogress|300|-work|work|/home/arjun/Desktop/HDL/clk_divider/test_bench.v|
+!i113 1
+R6
+R7

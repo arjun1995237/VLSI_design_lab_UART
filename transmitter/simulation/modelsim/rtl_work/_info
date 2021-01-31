@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/arjun/Desktop/HDL/transmitter/simulation/modelsim
+vcounter_tx
+Z1 !s110 1612068766
+!i10b 1
+!s100 EBi`=MB^f@Z=9=h?FDZh30
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IA<V^11C[g3D>@EQC;:BEJ2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1612068488
+Z5 8/home/arjun/Desktop/HDL/transmitter/transmitter.v
+Z6 F/home/arjun/Desktop/HDL/transmitter/transmitter.v
+!i122 2
+L0 1 11
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1612068766.000000
+!s107 /home/arjun/Desktop/HDL/transmitter/transmitter.v|
+Z9 !s90 -reportprogress|300|-work|work|/home/arjun/Desktop/HDL/transmitter/transmitter.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vtestbench
+!s110 1612068765
+!i10b 1
+!s100 Xz4k41mgD]9@C<bgM=I=R2
+R2
+I6Z>@c<WCh;eQooPk:ILi51
+R3
+R0
+w1612068715
+8/home/arjun/Desktop/HDL/transmitter/testbench.v
+F/home/arjun/Desktop/HDL/transmitter/testbench.v
+!i122 1
+L0 2 21
+R7
+r1
+!s85 0
+31
+!s108 1612068765.000000
+!s107 /home/arjun/Desktop/HDL/transmitter/testbench.v|
+!s90 -reportprogress|300|-work|work|/home/arjun/Desktop/HDL/transmitter/testbench.v|
+!i113 1
+R10
+R11
+vtransmitter
+R1
+!i10b 1
+!s100 >kkEWnM<e=TD[cHY^jf`U3
+R2
+ISZX5SCG2aI3G9_S:13iJ80
+R3
+R0
+R4
+R5
+R6
+!i122 2
+L0 14 50
+R7
+r1
+!s85 0
+31
+R8
+Z12 !s107 /home/arjun/Desktop/HDL/transmitter/transmitter.v|
+R9
+!i113 1
+R10
+R11
